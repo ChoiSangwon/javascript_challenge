@@ -85,9 +85,7 @@ function deselectAnswer() {
 
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
-  console.log("A");
-  console.log(currentQuestion);
-  console.log(answer);
+
   if (answer) {
     if (answer === quizData[currentQuestion].correct) {
       score++;
@@ -97,10 +95,12 @@ submitBtn.addEventListener("click", () => {
       console.log("b");
       loadQuiz();
     } else {
-      quiz.innerHTML = `<h2>you answered correctly at ${score}/${quizData.length} question</h2>
+      quiz.innerHTML = `<h2>정답을 이만큼 맞추셨네요 at ${score}/${quizData.length} question</h2>
       <button onclick="location.reload()" >Reload</button>
       `;
       delete answerArr;
     }
+  } else {
+    alert("답을 선택해 주세요!");
   }
 });
