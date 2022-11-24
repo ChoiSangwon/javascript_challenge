@@ -5,15 +5,15 @@
 }
 
 body {
-  background-color: #7bdaf3;
+  background-color: #ea87d1;
   display: flex;
   flex-wrap: wrap;
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
 .add {
-  background-color: #c256ae;
-  color: white;
+  background-color: #155173;
+  color: #bb3299;
   padding: 0.5rem 1rem;
   margin: 2rem auto;
   position: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 .notes {
-  background-color: white;
+  background-color: #bb3299;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
   margin: 20px;
   height: 400px;
@@ -30,7 +30,7 @@ body {
 }
 
 .notes .tools {
-  background-color: #9ec862;
+  background-color: #bb3299;
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem;
@@ -46,12 +46,13 @@ body {
 }
 
 .notes .main {
-  background-color: white;
+  background-color: rgb(234, 170, 170);
   height: 400px;
   width: 100%;
 }
 
 .notes textarea {
+  background-color: rgb(234, 170, 170);
   outline: none;
   font-family: inherit;
   font-size: 1.2rem;
