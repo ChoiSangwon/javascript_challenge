@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="'viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
+    <script
+      src="https://tistory3.daumcdn.net/tistory/941717/skin/images/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://tistory3.daumcdn.net/tistory/941717/skin/images/snowfall.jquery.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(document).snowfall({
+          deviceorientation: true,
+          round: true,
+          minSize: 1,
+          maxSize: 8,
+          flakeCount: 250,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Todo app</h1>
+    <form id="form">
+      <input type="text" id="input" class="input" placeholder="글씨 써라" />
+      <ul class="todos" id="todos"></ul>
+      <small
+        >왼쪽 클릭 하면 할일 했다고 체크 됨<br />
+
+        오른쪽 클릭 하면 지워짐</small
+      >
+    </form>
+  </body>
+</html>
