@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: palevioletred;
+  display: flex;
+
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: white;
+  min-height: 100vh;
+}
+
+.pw-container {
+  /* margin-top: 150px; */
+  background-color: rgb(197, 42, 94);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+
+.pw-header {
+  padding: 1rem;
+}
+
+.pw {
+  display: flex;
+  align-items: center;
+  background-color: palevioletred;
+  height: 70px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  position: relative;
+  overflow: auto;
+}
+
+.pw-header button {
+  position: absolute;
+  border: none;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 20%);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.pw:hover button {
+  opacity: 1;
+  transform: translate(0, 0%);
+}
+
+.pw-body {
+  padding: 1rem;
+}
+
+.form-control {
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.generate {
+  background-color: #abcfdb;
+  color: rebeccapurple;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
